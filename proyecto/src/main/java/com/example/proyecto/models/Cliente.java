@@ -9,12 +9,6 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "cliente")
-@NamedStoredProcedureQuery(name = "editarTelefono", procedureName = "editarTelefono", resultClasses = {
-        Cliente.class}, parameters = {
-        @StoredProcedureParameter(name = "CLIENTE_NUMERO", type = Integer.class, mode = ParameterMode.IN),
-        @StoredProcedureParameter(name = "CLIENTE_TELEFONO", type = String.class, mode = ParameterMode.IN)
-}
-)
 @ToString @EqualsAndHashCode
 public class Cliente {
 
